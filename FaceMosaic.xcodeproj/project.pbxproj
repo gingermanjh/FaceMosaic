@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01CEB16E23098E67D9953D8F /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1DAEC218B12AA4F88D879D /* ImageEditorView.swift */; };
+		025D808CC2E1A0F6F27D018C /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F13BB0CB0F12A2D6F0515 /* CGRect+Helpers.swift */; };
+		061DF01F036C0B976F90EC76 /* YOLOFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE7B66DCDD0A42B86A7C99 /* YOLOFaceDetector.swift */; };
+		3F1077C61D418BCE29758E1F /* ImageEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2CE7F101BDA70E01A15E3E /* ImageEditorViewModel.swift */; };
+		472A9AAFB877B0BA30937FFC /* YOLOFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE7B66DCDD0A42B86A7C99 /* YOLOFaceDetector.swift */; };
+		500EA7AA59D81330B14FE3E7 /* YOLOFace.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 271F69F220DD87A4EB8F778C /* YOLOFace.mlpackage */; };
+		5A1A9EB9C2D7B098B37B3D7C /* DetectedFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4E450715E847E6ADED0D2 /* DetectedFace.swift */; };
+		5D7AD6A8D3AFC1062F1C6E07 /* MosaicOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2F512C66D0D417625189 /* MosaicOverlayView.swift */; };
+		621A0F3654ECD171AD8C5DAA /* VisionFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686BA5AD34F6F92D6B5722F2 /* VisionFaceDetector.swift */; };
+		62ED841863ADC4EAE1633CEA /* FaceMosaicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610857893D508E756A64974F /* FaceMosaicApp.swift */; };
+		698A840240F331DE29DF0418 /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A624490F6C519EEB97F4F /* FaceDetector.swift */; };
+		69E250CA1317011F2F1D29FA /* ImageEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2CE7F101BDA70E01A15E3E /* ImageEditorViewModel.swift */; };
+		72DDAAD6A239A570E501C031 /* DetectedFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4E450715E847E6ADED0D2 /* DetectedFace.swift */; };
+		82350AF5B89F2EE598BF3B31 /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A624490F6C519EEB97F4F /* FaceDetector.swift */; };
+		84BBE4C4E2046BF00AF95886 /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F13BB0CB0F12A2D6F0515 /* CGRect+Helpers.swift */; };
+		865C2594D348CABA2A21CED5 /* ImageProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A11E12D6D37F4A47F8DE19 /* ImageProcessingService.swift */; };
+		965630337A25A9AE930F0F7B /* MosaicOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2F512C66D0D417625189 /* MosaicOverlayView.swift */; };
+		AFE05464983175950B321472 /* RegionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913428B589D702B64A59E02 /* RegionListView.swift */; };
+		B5FADAB9DF3520FA9977D460 /* PlatformImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A18DABB2FB0EAF3407F981 /* PlatformImage.swift */; };
+		B949AC37527F58DA0D716D49 /* RegionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913428B589D702B64A59E02 /* RegionListView.swift */; };
+		BA27975DD3F140778F27C039 /* VisionFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686BA5AD34F6F92D6B5722F2 /* VisionFaceDetector.swift */; };
+		BCB18F734238441A651A102E /* ImageProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A11E12D6D37F4A47F8DE19 /* ImageProcessingService.swift */; };
+		CA9C62399F0EFE8BEA4EE742 /* MosaicRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75B669FB09160A571E8445 /* MosaicRegion.swift */; };
+		CCDC77A97952C71C8B347FDA /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1DAEC218B12AA4F88D879D /* ImageEditorView.swift */; };
+		D0283650579BA17E5D33BED5 /* FaceMosaicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610857893D508E756A64974F /* FaceMosaicApp.swift */; };
+		D3BFC1EA9F4A035EF159F00C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE08E83C8CFE2E19B69784 /* ContentView.swift */; };
+		EC73A4138D59453B5E6439C9 /* YOLOFace.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 271F69F220DD87A4EB8F778C /* YOLOFace.mlpackage */; };
+		F2B7074F0D99E2934EEA5D94 /* PlatformImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A18DABB2FB0EAF3407F981 /* PlatformImage.swift */; };
+		F553675619D77FF59B41DB69 /* MosaicRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75B669FB09160A571E8445 /* MosaicRegion.swift */; };
+		FF855F9FC5AF6878FE560A91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE08E83C8CFE2E19B69784 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		105A624490F6C519EEB97F4F /* FaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
+		10C2D9747B9229B12C35FF74 /* FaceMosaic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FaceMosaic.entitlements; sourceTree = "<group>"; };
+		16A11E12D6D37F4A47F8DE19 /* ImageProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessingService.swift; sourceTree = "<group>"; };
+		18C5C71B8BE32510E227E653 /* FaceMosaic.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FaceMosaic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		271F69F220DD87A4EB8F778C /* YOLOFace.mlpackage */ = {isa = PBXFileReference; path = YOLOFace.mlpackage; sourceTree = "<group>"; };
+		2FFE7B66DCDD0A42B86A7C99 /* YOLOFaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLOFaceDetector.swift; sourceTree = "<group>"; };
+		3913428B589D702B64A59E02 /* RegionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListView.swift; sourceTree = "<group>"; };
+		610857893D508E756A64974F /* FaceMosaicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMosaicApp.swift; sourceTree = "<group>"; };
+		686BA5AD34F6F92D6B5722F2 /* VisionFaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionFaceDetector.swift; sourceTree = "<group>"; };
+		77C6997E1D6A71615F516EAB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7D75B669FB09160A571E8445 /* MosaicRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicRegion.swift; sourceTree = "<group>"; };
+		B2EE08E83C8CFE2E19B69784 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B4D604EC4E01FF6203198C55 /* FaceMosaic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceMosaic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A18DABB2FB0EAF3407F981 /* PlatformImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformImage.swift; sourceTree = "<group>"; };
+		D0AA2F512C66D0D417625189 /* MosaicOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicOverlayView.swift; sourceTree = "<group>"; };
+		EF2CE7F101BDA70E01A15E3E /* ImageEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorViewModel.swift; sourceTree = "<group>"; };
+		F16F13BB0CB0F12A2D6F0515 /* CGRect+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Helpers.swift"; sourceTree = "<group>"; };
+		FAD4E450715E847E6ADED0D2 /* DetectedFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedFace.swift; sourceTree = "<group>"; };
+		FB1DAEC218B12AA4F88D879D /* ImageEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01C1D9E380414890BDF599E0 /* FaceMosaic */ = {
+			isa = PBXGroup;
+			children = (
+				610857893D508E756A64974F /* FaceMosaicApp.swift */,
+				2D97FC8BEA5B0E1B0EF6ADA0 /* Models */,
+				E667C1FF67501014A60FB00B /* Resources */,
+				FDAF1AD833935EEF11B9B390 /* Services */,
+				024F7580088013FD5C897BCC /* Utilities */,
+				39FB9033EAA549D50018F9B3 /* ViewModels */,
+				36702B2C72768036890DA3F0 /* Views */,
+			);
+			path = FaceMosaic;
+			sourceTree = "<group>";
+		};
+		024F7580088013FD5C897BCC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F16F13BB0CB0F12A2D6F0515 /* CGRect+Helpers.swift */,
+				C3A18DABB2FB0EAF3407F981 /* PlatformImage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2D97FC8BEA5B0E1B0EF6ADA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4E450715E847E6ADED0D2 /* DetectedFace.swift */,
+				7D75B669FB09160A571E8445 /* MosaicRegion.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36702B2C72768036890DA3F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2EE08E83C8CFE2E19B69784 /* ContentView.swift */,
+				FB1DAEC218B12AA4F88D879D /* ImageEditorView.swift */,
+				D0AA2F512C66D0D417625189 /* MosaicOverlayView.swift */,
+				3913428B589D702B64A59E02 /* RegionListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39FB9033EAA549D50018F9B3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF2CE7F101BDA70E01A15E3E /* ImageEditorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		49BFF3ABFFF8EECDF457CCC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C5C71B8BE32510E227E653 /* FaceMosaic.app */,
+				B4D604EC4E01FF6203198C55 /* FaceMosaic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCAB84BD295013DBE609EB43 = {
+			isa = PBXGroup;
+			children = (
+				77C6997E1D6A71615F516EAB /* README.md */,
+				01C1D9E380414890BDF599E0 /* FaceMosaic */,
+				49BFF3ABFFF8EECDF457CCC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E667C1FF67501014A60FB00B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10C2D9747B9229B12C35FF74 /* FaceMosaic.entitlements */,
+				271F69F220DD87A4EB8F778C /* YOLOFace.mlpackage */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FDAF1AD833935EEF11B9B390 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				105A624490F6C519EEB97F4F /* FaceDetector.swift */,
+				16A11E12D6D37F4A47F8DE19 /* ImageProcessingService.swift */,
+				686BA5AD34F6F92D6B5722F2 /* VisionFaceDetector.swift */,
+				2FFE7B66DCDD0A42B86A7C99 /* YOLOFaceDetector.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8132D850F6F432CD4AA0172B /* FaceMosaic_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E3D234A84603E56B1268C7 /* Build configuration list for PBXNativeTarget "FaceMosaic_macOS" */;
+			buildPhases = (
+				38779A01E979A031B448490E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceMosaic_macOS;
+			packageProductDependencies = (
+			);
+			productName = FaceMosaic_macOS;
+			productReference = B4D604EC4E01FF6203198C55 /* FaceMosaic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CF4F79C18F5A692B2E9EB5E /* FaceMosaic_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80DDC89691735BCC31E86B08 /* Build configuration list for PBXNativeTarget "FaceMosaic_iOS" */;
+			buildPhases = (
+				2E90661815C7DF0684F1F0CC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceMosaic_iOS;
+			packageProductDependencies = (
+			);
+			productName = FaceMosaic_iOS;
+			productReference = 18C5C71B8BE32510E227E653 /* FaceMosaic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A5EEE922756867A19ABC1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = FD8BF6FAB6238594737D2A2E /* Build configuration list for PBXProject "FaceMosaic" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CCAB84BD295013DBE609EB43;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 49BFF3ABFFF8EECDF457CCC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CF4F79C18F5A692B2E9EB5E /* FaceMosaic_iOS */,
+				8132D850F6F432CD4AA0172B /* FaceMosaic_macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E90661815C7DF0684F1F0CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BBE4C4E2046BF00AF95886 /* CGRect+Helpers.swift in Sources */,
+				FF855F9FC5AF6878FE560A91 /* ContentView.swift in Sources */,
+				5A1A9EB9C2D7B098B37B3D7C /* DetectedFace.swift in Sources */,
+				698A840240F331DE29DF0418 /* FaceDetector.swift in Sources */,
+				62ED841863ADC4EAE1633CEA /* FaceMosaicApp.swift in Sources */,
+				01CEB16E23098E67D9953D8F /* ImageEditorView.swift in Sources */,
+				3F1077C61D418BCE29758E1F /* ImageEditorViewModel.swift in Sources */,
+				BCB18F734238441A651A102E /* ImageProcessingService.swift in Sources */,
+				965630337A25A9AE930F0F7B /* MosaicOverlayView.swift in Sources */,
+				CA9C62399F0EFE8BEA4EE742 /* MosaicRegion.swift in Sources */,
+				B5FADAB9DF3520FA9977D460 /* PlatformImage.swift in Sources */,
+				B949AC37527F58DA0D716D49 /* RegionListView.swift in Sources */,
+				BA27975DD3F140778F27C039 /* VisionFaceDetector.swift in Sources */,
+				EC73A4138D59453B5E6439C9 /* YOLOFace.mlpackage in Sources */,
+				061DF01F036C0B976F90EC76 /* YOLOFaceDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38779A01E979A031B448490E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025D808CC2E1A0F6F27D018C /* CGRect+Helpers.swift in Sources */,
+				D3BFC1EA9F4A035EF159F00C /* ContentView.swift in Sources */,
+				72DDAAD6A239A570E501C031 /* DetectedFace.swift in Sources */,
+				82350AF5B89F2EE598BF3B31 /* FaceDetector.swift in Sources */,
+				D0283650579BA17E5D33BED5 /* FaceMosaicApp.swift in Sources */,
+				CCDC77A97952C71C8B347FDA /* ImageEditorView.swift in Sources */,
+				69E250CA1317011F2F1D29FA /* ImageEditorViewModel.swift in Sources */,
+				865C2594D348CABA2A21CED5 /* ImageProcessingService.swift in Sources */,
+				5D7AD6A8D3AFC1062F1C6E07 /* MosaicOverlayView.swift in Sources */,
+				F553675619D77FF59B41DB69 /* MosaicRegion.swift in Sources */,
+				F2B7074F0D99E2934EEA5D94 /* PlatformImage.swift in Sources */,
+				AFE05464983175950B321472 /* RegionListView.swift in Sources */,
+				621A0F3654ECD171AD8C5DAA /* VisionFaceDetector.swift in Sources */,
+				500EA7AA59D81330B14FE3E7 /* YOLOFace.mlpackage in Sources */,
+				472A9AAFB877B0BA30937FFC /* YOLOFaceDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		44645BAA92CB2C8E724BFEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = FaceMosaic/Resources/FaceMosaic.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FaceMosaic;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "FaceMosaic needs permission to save edited photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "FaceMosaic needs access to your photo library to select and save photos.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.logan.FaceMosaic;
+				PRODUCT_NAME = FaceMosaic;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4A4D1F084BB6675FF84AE670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		4C6389F316BF8CCCBDD0B9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		62CC37589F822C6313639A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = FaceMosaic/Resources/FaceMosaic.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FaceMosaic;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "FaceMosaic needs permission to save edited photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "FaceMosaic needs access to your photo library to select and save photos.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.logan.FaceMosaic;
+				PRODUCT_NAME = FaceMosaic;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92881C408DE543C1F6F3A777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = FaceMosaic/Resources/FaceMosaic.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FaceMosaic;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "FaceMosaic needs permission to save edited photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "FaceMosaic needs access to your photo library to select and save photos.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.logan.FaceMosaic;
+				PRODUCT_NAME = FaceMosaic;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFC8E0D873F3657E559D0613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = FaceMosaic/Resources/FaceMosaic.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FaceMosaic;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "FaceMosaic needs permission to save edited photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "FaceMosaic needs access to your photo library to select and save photos.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.logan.FaceMosaic;
+				PRODUCT_NAME = FaceMosaic;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07E3D234A84603E56B1268C7 /* Build configuration list for PBXNativeTarget "FaceMosaic_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44645BAA92CB2C8E724BFEC6 /* Debug */,
+				EFC8E0D873F3657E559D0613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		80DDC89691735BCC31E86B08 /* Build configuration list for PBXNativeTarget "FaceMosaic_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92881C408DE543C1F6F3A777 /* Debug */,
+				62CC37589F822C6313639A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD8BF6FAB6238594737D2A2E /* Build configuration list for PBXProject "FaceMosaic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C6389F316BF8CCCBDD0B9D1 /* Debug */,
+				4A4D1F084BB6675FF84AE670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A5EEE922756867A19ABC1AB /* Project object */;
+}

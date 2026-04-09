@@ -1,0 +1,23 @@
+# Xcode
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods
+Pods/
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# XcodeGen
+# project.yml은 포함, 생성된 프로젝트는 제외해도 되지만
+# 편의상 xcodeproj는 포함 (xcodegen이 없는 사용자를 위해)
+weights/
