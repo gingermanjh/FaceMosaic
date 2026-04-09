@@ -10,11 +10,16 @@
 		01CEB16E23098E67D9953D8F /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1DAEC218B12AA4F88D879D /* ImageEditorView.swift */; };
 		025D808CC2E1A0F6F27D018C /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F13BB0CB0F12A2D6F0515 /* CGRect+Helpers.swift */; };
 		061DF01F036C0B976F90EC76 /* YOLOFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE7B66DCDD0A42B86A7C99 /* YOLOFaceDetector.swift */; };
+		0AF989748B8E9A0F516425A4 /* BatchGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A885AF81815E84AF03C0BA9 /* BatchGridView.swift */; };
+		2480233F28E001E7A9FA77A8 /* BatchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F2A55BDFA305F9841FEFD /* BatchItem.swift */; };
+		372714C08769A09A91E6BE25 /* MosaicSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEEF054AAA08CDD217CE7B0 /* MosaicSettings.swift */; };
 		3F1077C61D418BCE29758E1F /* ImageEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2CE7F101BDA70E01A15E3E /* ImageEditorViewModel.swift */; };
 		472A9AAFB877B0BA30937FFC /* YOLOFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE7B66DCDD0A42B86A7C99 /* YOLOFaceDetector.swift */; };
+		4F78D2D318DA888E5759A5D2 /* BatchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F2A55BDFA305F9841FEFD /* BatchItem.swift */; };
 		500EA7AA59D81330B14FE3E7 /* YOLOFace.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 271F69F220DD87A4EB8F778C /* YOLOFace.mlpackage */; };
 		5A1A9EB9C2D7B098B37B3D7C /* DetectedFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4E450715E847E6ADED0D2 /* DetectedFace.swift */; };
 		5D7AD6A8D3AFC1062F1C6E07 /* MosaicOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2F512C66D0D417625189 /* MosaicOverlayView.swift */; };
+		5F4DD444BC6D5B1629786F61 /* MosaicSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEEF054AAA08CDD217CE7B0 /* MosaicSettings.swift */; };
 		621A0F3654ECD171AD8C5DAA /* VisionFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686BA5AD34F6F92D6B5722F2 /* VisionFaceDetector.swift */; };
 		62ED841863ADC4EAE1633CEA /* FaceMosaicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610857893D508E756A64974F /* FaceMosaicApp.swift */; };
 		698A840240F331DE29DF0418 /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A624490F6C519EEB97F4F /* FaceDetector.swift */; };
@@ -29,10 +34,13 @@
 		B949AC37527F58DA0D716D49 /* RegionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913428B589D702B64A59E02 /* RegionListView.swift */; };
 		BA27975DD3F140778F27C039 /* VisionFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686BA5AD34F6F92D6B5722F2 /* VisionFaceDetector.swift */; };
 		BCB18F734238441A651A102E /* ImageProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A11E12D6D37F4A47F8DE19 /* ImageProcessingService.swift */; };
+		C8238D6F1466B91ACDF90EDB /* BatchGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A885AF81815E84AF03C0BA9 /* BatchGridView.swift */; };
 		CA9C62399F0EFE8BEA4EE742 /* MosaicRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75B669FB09160A571E8445 /* MosaicRegion.swift */; };
 		CCDC77A97952C71C8B347FDA /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1DAEC218B12AA4F88D879D /* ImageEditorView.swift */; };
 		D0283650579BA17E5D33BED5 /* FaceMosaicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610857893D508E756A64974F /* FaceMosaicApp.swift */; };
+		D0E52B76830CBD1679E5FCFA /* BatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490851B000D648418B5AF80 /* BatchViewModel.swift */; };
 		D3BFC1EA9F4A035EF159F00C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE08E83C8CFE2E19B69784 /* ContentView.swift */; };
+		DF88732B77550898DAF2373D /* BatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490851B000D648418B5AF80 /* BatchViewModel.swift */; };
 		EC73A4138D59453B5E6439C9 /* YOLOFace.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 271F69F220DD87A4EB8F778C /* YOLOFace.mlpackage */; };
 		F2B7074F0D99E2934EEA5D94 /* PlatformImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A18DABB2FB0EAF3407F981 /* PlatformImage.swift */; };
 		F553675619D77FF59B41DB69 /* MosaicRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75B669FB09160A571E8445 /* MosaicRegion.swift */; };
@@ -40,17 +48,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CEEF054AAA08CDD217CE7B0 /* MosaicSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicSettings.swift; sourceTree = "<group>"; };
 		105A624490F6C519EEB97F4F /* FaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
 		10C2D9747B9229B12C35FF74 /* FaceMosaic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FaceMosaic.entitlements; sourceTree = "<group>"; };
 		16A11E12D6D37F4A47F8DE19 /* ImageProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessingService.swift; sourceTree = "<group>"; };
 		18C5C71B8BE32510E227E653 /* FaceMosaic.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FaceMosaic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271F69F220DD87A4EB8F778C /* YOLOFace.mlpackage */ = {isa = PBXFileReference; path = YOLOFace.mlpackage; sourceTree = "<group>"; };
 		2FFE7B66DCDD0A42B86A7C99 /* YOLOFaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLOFaceDetector.swift; sourceTree = "<group>"; };
+		3490851B000D648418B5AF80 /* BatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchViewModel.swift; sourceTree = "<group>"; };
 		3913428B589D702B64A59E02 /* RegionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListView.swift; sourceTree = "<group>"; };
+		3A885AF81815E84AF03C0BA9 /* BatchGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchGridView.swift; sourceTree = "<group>"; };
 		610857893D508E756A64974F /* FaceMosaicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMosaicApp.swift; sourceTree = "<group>"; };
 		686BA5AD34F6F92D6B5722F2 /* VisionFaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionFaceDetector.swift; sourceTree = "<group>"; };
 		77C6997E1D6A71615F516EAB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7D75B669FB09160A571E8445 /* MosaicRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicRegion.swift; sourceTree = "<group>"; };
+		8F0F2A55BDFA305F9841FEFD /* BatchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchItem.swift; sourceTree = "<group>"; };
 		B2EE08E83C8CFE2E19B69784 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4D604EC4E01FF6203198C55 /* FaceMosaic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceMosaic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A18DABB2FB0EAF3407F981 /* PlatformImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformImage.swift; sourceTree = "<group>"; };
@@ -88,8 +100,10 @@
 		2D97FC8BEA5B0E1B0EF6ADA0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8F0F2A55BDFA305F9841FEFD /* BatchItem.swift */,
 				FAD4E450715E847E6ADED0D2 /* DetectedFace.swift */,
 				7D75B669FB09160A571E8445 /* MosaicRegion.swift */,
+				0CEEF054AAA08CDD217CE7B0 /* MosaicSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,6 +111,7 @@
 		36702B2C72768036890DA3F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3A885AF81815E84AF03C0BA9 /* BatchGridView.swift */,
 				B2EE08E83C8CFE2E19B69784 /* ContentView.swift */,
 				FB1DAEC218B12AA4F88D879D /* ImageEditorView.swift */,
 				D0AA2F512C66D0D417625189 /* MosaicOverlayView.swift */,
@@ -108,6 +123,7 @@
 		39FB9033EAA549D50018F9B3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3490851B000D648418B5AF80 /* BatchViewModel.swift */,
 				EF2CE7F101BDA70E01A15E3E /* ImageEditorViewModel.swift */,
 			);
 			path = ViewModels;
@@ -224,6 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF989748B8E9A0F516425A4 /* BatchGridView.swift in Sources */,
+				4F78D2D318DA888E5759A5D2 /* BatchItem.swift in Sources */,
+				DF88732B77550898DAF2373D /* BatchViewModel.swift in Sources */,
 				84BBE4C4E2046BF00AF95886 /* CGRect+Helpers.swift in Sources */,
 				FF855F9FC5AF6878FE560A91 /* ContentView.swift in Sources */,
 				5A1A9EB9C2D7B098B37B3D7C /* DetectedFace.swift in Sources */,
@@ -234,6 +253,7 @@
 				BCB18F734238441A651A102E /* ImageProcessingService.swift in Sources */,
 				965630337A25A9AE930F0F7B /* MosaicOverlayView.swift in Sources */,
 				CA9C62399F0EFE8BEA4EE742 /* MosaicRegion.swift in Sources */,
+				372714C08769A09A91E6BE25 /* MosaicSettings.swift in Sources */,
 				B5FADAB9DF3520FA9977D460 /* PlatformImage.swift in Sources */,
 				B949AC37527F58DA0D716D49 /* RegionListView.swift in Sources */,
 				BA27975DD3F140778F27C039 /* VisionFaceDetector.swift in Sources */,
@@ -246,6 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8238D6F1466B91ACDF90EDB /* BatchGridView.swift in Sources */,
+				2480233F28E001E7A9FA77A8 /* BatchItem.swift in Sources */,
+				D0E52B76830CBD1679E5FCFA /* BatchViewModel.swift in Sources */,
 				025D808CC2E1A0F6F27D018C /* CGRect+Helpers.swift in Sources */,
 				D3BFC1EA9F4A035EF159F00C /* ContentView.swift in Sources */,
 				72DDAAD6A239A570E501C031 /* DetectedFace.swift in Sources */,
@@ -256,6 +279,7 @@
 				865C2594D348CABA2A21CED5 /* ImageProcessingService.swift in Sources */,
 				5D7AD6A8D3AFC1062F1C6E07 /* MosaicOverlayView.swift in Sources */,
 				F553675619D77FF59B41DB69 /* MosaicRegion.swift in Sources */,
+				5F4DD444BC6D5B1629786F61 /* MosaicSettings.swift in Sources */,
 				F2B7074F0D99E2934EEA5D94 /* PlatformImage.swift in Sources */,
 				AFE05464983175950B321472 /* RegionListView.swift in Sources */,
 				621A0F3654ECD171AD8C5DAA /* VisionFaceDetector.swift in Sources */,
