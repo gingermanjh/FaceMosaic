@@ -3,13 +3,17 @@ import CoreGraphics
 import CoreML
 
 /// YOLO11n-face CoreML 모델 기반 얼굴 인식 구현체
-/// Apple Vision보다 높은 정확도 (WIDERFace 데이터셋 학습)
-struct YOLOFaceDetector: FaceDetector {
+/// VNCoreMLModel을 캐싱하여 배치 처리 시 1회만 로드
+final class YOLOFaceDetector: FaceDetector {
     let name = "YOLO11n-face"
 
-    func detectFaces(in cgImage: CGImage) async throws -> [DetectedFace] {
+    private var cachedModel: VNCoreMLModel?
+
+    private func getModel() throws -> VNCoreMLModel {
+        if let cached = cachedModel { return cached }
+
         let config = MLModelConfiguration()
-        config.computeUnits = .all // Neural Engine + GPU + CPU 자동 선택
+        config.computeUnits = .all
 
         guard let modelURL = Bundle.main.url(forResource: "YOLOFace", withExtension: "mlmodelc")
                 ?? Bundle.main.url(forResource: "YOLOFace", withExtension: "mlpackage") else {
@@ -18,6 +22,12 @@ struct YOLOFaceDetector: FaceDetector {
 
         let mlModel = try MLModel(contentsOf: modelURL, configuration: config)
         let vnModel = try VNCoreMLModel(for: mlModel)
+        cachedModel = vnModel
+        return vnModel
+    }
+
+    func detectFaces(in cgImage: CGImage) async throws -> [DetectedFace] {
+        let vnModel = try getModel()
 
         return try await withCheckedThrowingContinuation { continuation in
             let request = VNCoreMLRequest(model: vnModel) { request, error in
@@ -37,7 +47,6 @@ struct YOLOFaceDetector: FaceDetector {
                 continuation.resume(returning: faces)
             }
 
-            // YOLO 모델의 입력 크기에 맞게 이미지 스케일링
             request.imageCropAndScaleOption = .scaleFill
 
             let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])

@@ -3,54 +3,6 @@ import PhotosUI
 import Photos
 import UniformTypeIdentifiers
 
-/// 효과 종류
-enum MosaicStyle: String, CaseIterable, Hashable {
-    case pixelate = "모자이크"
-    case blur = "블러"
-}
-
-/// 모자이크 강도 프리셋
-enum MosaicIntensity: String, CaseIterable {
-    case light = "약하게"
-    case medium = "보통"
-    case strong = "강하게"
-
-    var pixelScale: Float {
-        switch self {
-        case .light: return 12
-        case .medium: return 25
-        case .strong: return 50
-        }
-    }
-
-    var blurRadius: Float {
-        switch self {
-        case .light: return 15
-        case .medium: return 30
-        case .strong: return 60
-        }
-    }
-
-    func value(for style: MosaicStyle) -> Float {
-        style == .blur ? blurRadius : pixelScale
-    }
-}
-
-/// 영역 크기 프리셋
-enum RegionSize: String, CaseIterable {
-    case tight = "딱맞게"
-    case normal = "보통"
-    case wide = "넓게"
-
-    var multiplier: Float {
-        switch self {
-        case .tight: return 1.0
-        case .normal: return 1.3
-        case .wide: return 1.8
-        }
-    }
-}
-
 @MainActor
 final class ImageEditorViewModel: ObservableObject {
     // MARK: - Published State
@@ -77,6 +29,23 @@ final class ImageEditorViewModel: ObservableObject {
 
     init(faceDetector: FaceDetector = YOLOFaceDetector()) {
         self.faceDetector = faceDetector
+    }
+
+    /// BatchItem에서 편집기 진입 시 사용. detectFaces() 생략 (이미 감지됨).
+    init(batchItem: BatchItem) {
+        self.faceDetector = YOLOFaceDetector()
+        if let platformImage = PlatformImage(data: batchItem.sourceData),
+           let cgImage = platformImage.asCGImage {
+            self.originalImage = cgImage
+            self.previewImage = Self.createPreview(from: cgImage)
+        }
+        self.regions = batchItem.regions
+        self.mosaicStyle = batchItem.mosaicStyle
+        self.pixelScale = batchItem.pixelScale
+        // 즉시 프리뷰 렌더링 (감지 생략)
+        Task { @MainActor in
+            self.reprocessImage()
+        }
     }
 
     // MARK: - Photo Loading
