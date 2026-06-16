@@ -71,6 +71,12 @@ let vm = ImageEditorViewModel(faceDetector: VisionFaceDetector())
 
 추후 Google ML Kit, MediaPipe 등의 구현체를 추가할 수 있습니다.
 
+### 왜 akanametov/yolo-face인가?
+
+공식 [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)는 COCO 80개 클래스(person, car, dog 등) 대상 일반 객체 탐지 모델만 제공하며, face detection용 pretrained weight는 제공하지 않습니다. `person` 클래스는 머리부터 발끝까지 전신을 잡기 때문에 얼굴 모자이크 용도에는 부적합합니다.
+
+[akanametov/yolo-face](https://github.com/akanametov/yolo-face)는 동일한 YOLO 아키텍처를 WIDERFace 데이터셋으로 fine-tuning하여 **얼굴 영역만 정확하게 탐지**하는 모델을 제공합니다. ultralytics API와 완전히 호환되며, CoreML 변환도 동일한 파이프라인으로 가능합니다.
+
 ## 이미지 처리 방식
 
 마스크 기반 합성(Mask-Based Compositing)을 사용합니다:
